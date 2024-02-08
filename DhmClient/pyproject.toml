@@ -1,0 +1,36 @@
+# pyproject.toml
+[build-system]
+requires = [
+    "setuptools",
+	"numpy",
+	"scipy",
+	"skimage",
+	"cv2",
+	"matplotlib",
+	"SciDataContainer",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = [
+    "holoclient",
+]
+
+[project]
+name = "HoloClient"
+version = "0.3.0"
+authors = [
+    { name = "Reinhard Caspary", email = "r.caspary@posteo.de"},
+]
+description = "Client for a remote digital holographic microscope."
+readme = "..\README.md"
+dependencies = [
+    'numpy>=1.15',
+    'SciDataContainer>=1.1',
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]

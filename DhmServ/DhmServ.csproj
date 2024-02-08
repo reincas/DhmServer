@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <OutputType>Exe</OutputType>
+	  <TargetFrameworks>net48</TargetFrameworks>
+	  <Platforms>AnyCPU;x64</Platforms>
+	  <BaseOutputPath>$(MSBuildProjectExtensionsPath)\bin</BaseOutputPath>
+	  <BaseIntermediateOutputPath>$(MSBuildProjectExtensionsPath)\obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Basler.Pylon.NET.x64" Version="7.4.0.38864" />
+		<PackageReference Include="LynceeTec.DHM" Version="9.1.19516" />
+		<PackageReference Include="LynceeTec.Interfaces" Version="9.1.19516" />
+	</ItemGroup>
+
+</Project>

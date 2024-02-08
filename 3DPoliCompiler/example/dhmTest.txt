@@ -1,0 +1,21 @@
+//SetHome(XYZ);
+//MoveA(W, 0.0001)
+
+//MoveR(XY, 100, 100)
+//Shutter(1)
+//MoveR(XY, -100, -100)
+//Shutter(0)
+
+// Select one of the objectives calibrated for the DHM:
+//   178: 20x Zeiss Femtika
+//   179: 20x Nikon Femtika
+//   180: 63x Zeiss Femtika
+GenerateCode2("dhmInit", "178");
+
+// File name containing a variable integer number with 4 digits filled with zeros as required.
+// File names without absolute path are relative to the desktop.
+$i := 271;
+GenerateText(0, "C:\Temp\myholo-{:04.0f}.zdc", $i);
+
+// Store current hologram with text 0 taken as file name
+GenerateCode2("dhmHolo", 0, "Reinhard Caspary", "reinhard.caspary@phoenixd.uni-hannover.de");
