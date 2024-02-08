@@ -18,10 +18,7 @@ namespace DhmServ
     class DhmServ
     {
         public string addr = "0.0.0.0";
-        //public string addr = "192.168.22.2";
-        //public string addr = "130.75.93.90";
         public int port = 27182;
-        public string magic = "HoloServ";
 
         private TcpListener server = null;
         private TcpClient client = null;
@@ -42,7 +39,7 @@ namespace DhmServ
         {
             int result = Result.success;
 
-            Console.WriteLine($"This is HoloServ {this.dhm.classVersion}");
+            Console.WriteLine($"This is DhmServ {this.dhm.classVersion}");
             while (true)
             {
                 Console.WriteLine($"Waiting {this.addr}:{this.port}...");

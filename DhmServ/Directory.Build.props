@@ -1,5 +1,5 @@
 <Project>
     <PropertyGroup>
-        <MSBUildProjectExtensionsPath>E:\offline\HoloServ\DhmServ</MSBUildProjectExtensionsPath>
+        <MSBUildProjectExtensionsPath>E:\offline\DhmServer\DhmServ</MSBUildProjectExtensionsPath>
     </PropertyGroup>
 </Project>
