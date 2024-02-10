@@ -39,7 +39,7 @@ namespace DhmServ
         {
             int result = Result.success;
 
-            Console.WriteLine($"This is DhmServ {this.dhm.classVersion}");
+            Console.WriteLine($"This is DhmServ {this.dhm.classVersion}, cmd version {Command.Version}");
             while (true)
             {
                 Console.WriteLine($"Waiting {this.addr}:{this.port}...");

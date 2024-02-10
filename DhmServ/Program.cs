@@ -4,7 +4,7 @@
  * This program is free software under the terms of the MIT license.     *
  *************************************************************************/
 
-using Basler.Pylon;
+//using Basler.Pylon;
 using System;
 
 namespace DhmServ
